@@ -102,6 +102,11 @@ bibliography: bibliography.bib
 output: rticles::springer_article
 ```
 
+This YAML doesn't show the authors in the final output. A solution is using something like this: 
+```yaml
+author: Jimi Hendrix ^[Senior Analyst, University of Rock. Contact@Jimi.com] 
+```
+
 As the Rmd documents are built using customized templates, you may not be able to use the YAML metadata to control the layout of the document as described in Section \@ref(pdf-document), unless the template supports such metadata. For example, adding `toc: true` may not add a table of contents. Commands that control the building process may still be used though, including `keep_tex: true`, or those that configure **knitr** chunk options (e.g., `fig_width`).
 
 ## LaTeX content {#rticles-latex}
